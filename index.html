@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi Mahasiswa FTEIC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+ 
+<body background="header.jpg">
+    <header style="background-color: rgb(8, 29, 87);">
+        <table>
+            <td><img src="images.png" alt="home" width="55" height="50"></td>
+            <td style="color: white;">Institut Teknologi Sepuluh Nopember Surabaya</td>
+        </table>
+    </header>
+ 
+    <br>
+    <div class="container">
+        <h2 style="color: white; text-align: center;">Formulir Persetujuan Kuliah Tatap Muka</h2>
+        <h2 style="color: white; text-align: center;">Mahasiswa FTEIC</h2>
+        <form name="formValidasi" onsubmit="return validateForm()" class="pt-2">
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Nama</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control" minlength="5" maxlength="50">
+            </div>
+
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">NRP</label>
+                <input type="text" name="nrp" placeholder="NRP lengkap" class="form-control" minlength="8"
+                   maxlength="16">
+            </div>
+ 
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Email</label>
+                <input type="email" name="email" placeholder="Email aktif" class="form-control">
+            </div>
+ 
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Alamat Domisili</label>
+                <textarea type="text" name="domisili" id="" cols="30" rows="3" placeholder="Alamat lengkap" class="form-control"></textarea>
+            </div>
+ 
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Jurusan</label>
+                <select name="jurusan" class="form-control">
+                    <option selected>- Pilih Jurusan</option>
+                    <option value="1">Teknik Elektro</option>
+                    <option value="2">Teknik Biomedik</option>
+                    <option value="3">Teknik Komputer</option>
+                    <option value="4">Teknik Informatika</option>
+                    <option value="5">Sistem Informasi</option>
+                    <option value="6">Teknologi Informasi</option>
+                </select>
+            </div>
+ 
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Apakah sudah vaksin Covid-19?</label>
+                <select name="status_vaksin" class="form-control">
+                    <option selected>- Pilih Status Vaksin</option>
+                    <option value="1">Belum</option>
+                    <option value="2">Sudah - Dosis 1</option>
+                    <option value="3">Sudah - Dosis 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label style="color: white;" class="font-weight-bold">Kesediaan</label>
+                <select name="Kesediaan" class="form-control">
+                    <option value="0">- Kesediaan Kuliah</option>
+                    <option value="1">Bersedia tatap muka</option>
+                    <option value="2">Bersedia daring</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+        </form>
+    </div>
+ 
+    <br>
+    <header style="background-color: rgb(8, 29, 87);">
+        <table>
+            <td style="color: white;">&copy; Julietta Anastasia Panjaitan - PWEB D 2021</td>
+        </table>
+    </header>
+</body>
+ 
+</html>
